@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop</title>
+  <title>Kontakt</title>
   <style>
     body {
       margin: 0;
@@ -30,33 +30,14 @@
       text-align: center;
       padding: 20px 0;
     }
-    .category {
+    main {
       padding: 20px;
     }
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 20px;
-    }
-    .product {
-      width: 18%;
-      text-align: center;
-    }
-    .product img {
-      width: 100%;
-    }
-    footer {
-      background-color: #0057b7;
-      color: white;
-      padding: 20px;
-    }
-    footer h2 {
-      text-align: center;
-    }
-    form {
+    .kontakt-formular {
       max-width: 600px;
       margin: 0 auto;
+    }
+    .kontakt-formular form {
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -67,10 +48,25 @@
       border-radius: 5px;
     }
     button {
-      background-color: white;
-      color: #0057b7;
+      background-color: #0057b7;
+      color: white;
       font-weight: bold;
       cursor: pointer;
+    }
+    footer {
+      background-color: #0057b7;
+      color: white;
+      padding: 20px;
+    }
+    footer h2 {
+      text-align: center;
+    }
+    footer form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
   </style>
 </head>
@@ -90,28 +86,15 @@
   </header>
 
   <main>
-    <h1>Shop</h1>
-
-    <section class="category">
-      <h2>Nikkas</h2>
-      <div class="products">
-        <div class="product"><img src="https://via.placeholder.com/200" alt="Nikkas 1"><p>Nikkas 1</p></div>
-        <div class="product"><img src="https://via.placeholder.com/200" alt="Nikkas 2"><p>Nikkas 2</p></div>
-        <div class="product"><img src="https://via.placeholder.com/200" alt="Nikkas 3"><p>Nikkas 3</p></div>
-        <div class="product"><img src="https://via.placeholder.com/200" alt="Nikkas 4"><p>Nikkas 4</p></div>
-        <div class="product"><img src="https://via.placeholder.com/200" alt="Nikkas 5"><p>Nikkas 5</p></div>
-      </div>
-    </section>
-
-    <section class="category">
-      <h2>Juice</h2>
-      <div class="products">
-        <div class="product"><img src="https://via.placeholder.com/200" alt="Juice 1"><p>Juice 1</p></div>
-        <div class="product"><img src="https://via.placeholder.com/200" alt="Juice 2"><p>Juice 2</p></div>
-        <div class="product"><img src="https://via.placeholder.com/200" alt="Juice 3"><p>Juice 3</p></div>
-        <div class="product"><img src="https://via.placeholder.com/200" alt="Juice 4"><p>Juice 4</p></div>
-        <div class="product"><img src="https://via.placeholder.com/200" alt="Juice 5"><p>Juice 5</p></div>
-      </div>
+    <h1>Kontakt</h1>
+    <section class="kontakt-formular">
+      <form>
+        <input type="text" name="jmeno" placeholder="Jméno" required>
+        <input type="text" name="prijmeni" placeholder="Příjmení" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="zprava" rows="4" placeholder="Váš dotaz..." required></textarea>
+        <button type="submit">Odeslat</button>
+      </form>
     </section>
   </main>
 
